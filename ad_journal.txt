@@ -1,0 +1,1402 @@
+Warning: first requested MODTRAN run calls for existing statistics; changing to no-statistics
+ 
+      *****************FLAASH-SLANT****************
+      Spectral Sciences Atmospheric Correction Code
+      1998-2008
+          Version 01302013
+          ** See Instructions for Use ** 
+ 
+*************  MAIN MENU   ***************
+ 
+Commands:
+     m = set up MODTRAN input file
+     r = Run MODTRAN
+     h = Hyperspectral data analysis
+     a = About FLAASH (Instructions)
+     c = Convert existing MODTRAN tape7
+     w = Read Warfighter run file, create initial tape5
+     q = Quit
+ 
+script command h
+ 
+Path for output files (except output reflectance cube) is C:\Users\Lenovo\Desktop\
+Enter  u = Use this path   or    a = select Another path :
+script command u
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command d
+Reading header (if any) from image file C:\Users\Lenovo\Desktop\实习2 遥感图像大气校正\实习2\BIL
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+ Select method for representing instrument spectral filter function.
+ Type 1 for calculated function, 2 for a function defined by a file, 3 for external channel definitions passed in.
+...type 99 to accept default from call.
+script command 99
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command l
+Channel definitions: type 1 to use passed-in default,
+                     2 to select manually between automatic
+                          and external-file channel definitions.
+script command 1
+Warning: KT calculation not defined in channel selection file C:\Users\Lenovo\Desktop\channel_def.txt
+Warning: vegetation parameters not found in channel selection file C:\Users\Lenovo\Desktop\channel_def.txt
+Loading spectral data...
+*Not displaying RGB radiance image, cirrus cloud image and last-line spectra
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command M
+Select option:
+   g = standard GUI interface
+   v = visibility setup
+script command call
+Estimated MODTRAN run time:      0.060484559 min
+Estimated MODTRAN run time:      0.060163308 min
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command R
+Run MODTRAN using tape5 in current directory:
+     Are you sure?  y=yes  n=no
+script command y
+Converting tape7 to ACC archive (.fla) file for storage
+Select archive filename
+Opening archive file to write:   C:\Users\Lenovo\Desktop\acc_modroot.fla
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+No. of spectra=       1
+No. of spectra=       2
+No. of spectra=       3
+No. of spectra=       4
+No. of spectra=       5
+No. of spectra=       6
+No. of spectra=       7
+No. of spectra=       8
+No. of spectra=       9
+Column water range=       3.70325  to        4.52620 g/cm2
+       (       4607.52 to       5631.41 atm-cm)
+No. of frequencies=    1765
+File archived
+Use C:\Users\Lenovo\Desktop\acc_modroot.fla  as current MODTRAN archive file?
+    0 = no
+    1 = use as altitude loop file
+    2 = use as water loop file
+    3 = use as aerosol loop file
+script command 2
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command MSc
+Reading archive file of previous MODTRAN calculation C:\Users\Lenovo\Desktop\acc_modroot.fla
+(NOTE:  this calculation must be appropriate for the current data cube)
+     u = Use this file
+     a = select Another existing file (dialog)
+     d = use Another existing file (Direct filename entry)
+     q = Return to the hyperspectral menu
+     m = Set up new MODTRAN calculation
+script command u
+Calculating doverb
+*Not displaying surface image of look-up table
+Too few channels to plot calculated MODTRAN spectra
+Completed processing MS MODTRAN calculations
+Center water column value from MODTRAN is       4.11473 gm/cm2
+Type y to use this, n to enter a value
+script command y
+Writing illumination functions to C:\Users\Lenovo\Desktop\ad_illumination_functions.sli
+Writing illumination functions to C:\Users\Lenovo\Desktop\ad_illumination_functions.txt
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command a
+Generating spatially smoothed image C:\Users\Lenovo\Desktop\smooth
+Enter 1 to process radiance image C:\Users\Lenovo\Desktop\实习2 遥感图像大气校正\实习2\BIL (for reflectance determination)
+         2 to process reflectance image C:\Users\Lenovo\Desktop\REF (for radiance simulation)
+script command 1.00000
+Smoothing parameters passed in:
+sensor altitude (Km)=      705.000
+IFOV (millirad)=    0.0425532
+aerosol scale height (Km)=      1.50000
+    Estimated 1/e scattering range=      0.440100 km
+Loading data cube...
+Generating smoothed image for adjacency correction...
+Convolution kernel dimension is equivalent to      136 image pixels
+ODScale=    0.0159355alpha=    0.0265592
+Smoothing...
+Writing output to file...
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command r
+Use adjacency correction?   y = yes   n = no
+script command y
+The output resolution sets the number of wavelength channels over
+which spectral polishing will be carried out.  Values less than 2
+give no polishing.  Present value is        2
+Please enter an integer for output resolution, or <Enter> for present value.
+Polishing resolution passed in=
+ 
+Spectral polishing will not be used for resolution=   0
+Total radiance coefficients calculated
+Opening output reflectance file to write:   C:\Users\Lenovo\Desktop\REF
+Enter  u = Use this file,  a = select Another file (dialog),
+or  d = select another file (Direct filename entry) :
+script command u
+Begin image correction loop
+Completed line       1
+Completed line       2
+Completed line       3
+Completed line       4
+Completed line       5
+Completed line       6
+Completed line       7
+Completed line       8
+Completed line       9
+Completed line      10
+Completed line      11
+Completed line      12
+Completed line      13
+Completed line      14
+Completed line      15
+Completed line      16
+Completed line      17
+Completed line      18
+Completed line      19
+Completed line      20
+Completed line      21
+Completed line      22
+Completed line      23
+Completed line      24
+Completed line      25
+Completed line      26
+Completed line      27
+Completed line      28
+Completed line      29
+Completed line      30
+Completed line      31
+Completed line      32
+Completed line      33
+Completed line      34
+Completed line      35
+Completed line      36
+Completed line      37
+Completed line      38
+Completed line      39
+Completed line      40
+Completed line      41
+Completed line      42
+Completed line      43
+Completed line      44
+Completed line      45
+Completed line      46
+Completed line      47
+Completed line      48
+Completed line      49
+Completed line      50
+Completed line      51
+Completed line      52
+Completed line      53
+Completed line      54
+Completed line      55
+Completed line      56
+Completed line      57
+Completed line      58
+Completed line      59
+Completed line      60
+Completed line      61
+Completed line      62
+Completed line      63
+Completed line      64
+Completed line      65
+Completed line      66
+Completed line      67
+Completed line      68
+Completed line      69
+Completed line      70
+Completed line      71
+Completed line      72
+Completed line      73
+Completed line      74
+Completed line      75
+Completed line      76
+Completed line      77
+Completed line      78
+Completed line      79
+Completed line      80
+Completed line      81
+Completed line      82
+Completed line      83
+Completed line      84
+Completed line      85
+Completed line      86
+Completed line      87
+Completed line      88
+Completed line      89
+Completed line      90
+Completed line      91
+Completed line      92
+Completed line      93
+Completed line      94
+Completed line      95
+Completed line      96
+Completed line      97
+Completed line      98
+Completed line      99
+Completed line     100
+Completed line     101
+Completed line     102
+Completed line     103
+Completed line     104
+Completed line     105
+Completed line     106
+Completed line     107
+Completed line     108
+Completed line     109
+Completed line     110
+Completed line     111
+Completed line     112
+Completed line     113
+Completed line     114
+Completed line     115
+Completed line     116
+Completed line     117
+Completed line     118
+Completed line     119
+Completed line     120
+Completed line     121
+Completed line     122
+Completed line     123
+Completed line     124
+Completed line     125
+Completed line     126
+Completed line     127
+Completed line     128
+Completed line     129
+Completed line     130
+Completed line     131
+Completed line     132
+Completed line     133
+Completed line     134
+Completed line     135
+Completed line     136
+Completed line     137
+Completed line     138
+Completed line     139
+Completed line     140
+Completed line     141
+Completed line     142
+Completed line     143
+Completed line     144
+Completed line     145
+Completed line     146
+Completed line     147
+Completed line     148
+Completed line     149
+Completed line     150
+Completed line     151
+Completed line     152
+Completed line     153
+Completed line     154
+Completed line     155
+Completed line     156
+Completed line     157
+Completed line     158
+Completed line     159
+Completed line     160
+Completed line     161
+Completed line     162
+Completed line     163
+Completed line     164
+Completed line     165
+Completed line     166
+Completed line     167
+Completed line     168
+Completed line     169
+Completed line     170
+Completed line     171
+Completed line     172
+Completed line     173
+Completed line     174
+Completed line     175
+Completed line     176
+Completed line     177
+Completed line     178
+Completed line     179
+Completed line     180
+Completed line     181
+Completed line     182
+Completed line     183
+Completed line     184
+Completed line     185
+Completed line     186
+Completed line     187
+Completed line     188
+Completed line     189
+Completed line     190
+Completed line     191
+Completed line     192
+Completed line     193
+Completed line     194
+Completed line     195
+Completed line     196
+Completed line     197
+Completed line     198
+Completed line     199
+Completed line     200
+Completed line     201
+Completed line     202
+Completed line     203
+Completed line     204
+Completed line     205
+Completed line     206
+Completed line     207
+Completed line     208
+Completed line     209
+Completed line     210
+Completed line     211
+Completed line     212
+Completed line     213
+Completed line     214
+Completed line     215
+Completed line     216
+Completed line     217
+Completed line     218
+Completed line     219
+Completed line     220
+Completed line     221
+Completed line     222
+Completed line     223
+Completed line     224
+Completed line     225
+Completed line     226
+Completed line     227
+Completed line     228
+Completed line     229
+Completed line     230
+Completed line     231
+Completed line     232
+Completed line     233
+Completed line     234
+Completed line     235
+Completed line     236
+Completed line     237
+Completed line     238
+Completed line     239
+Completed line     240
+Completed line     241
+Completed line     242
+Completed line     243
+Completed line     244
+Completed line     245
+Completed line     246
+Completed line     247
+Completed line     248
+Completed line     249
+Completed line     250
+Completed line     251
+Completed line     252
+Completed line     253
+Completed line     254
+Completed line     255
+Completed line     256
+Completed line     257
+Completed line     258
+Completed line     259
+Completed line     260
+Completed line     261
+Completed line     262
+Completed line     263
+Completed line     264
+Completed line     265
+Completed line     266
+Completed line     267
+Completed line     268
+Completed line     269
+Completed line     270
+Completed line     271
+Completed line     272
+Completed line     273
+Completed line     274
+Completed line     275
+Completed line     276
+Completed line     277
+Completed line     278
+Completed line     279
+Completed line     280
+Completed line     281
+Completed line     282
+Completed line     283
+Completed line     284
+Completed line     285
+Completed line     286
+Completed line     287
+Completed line     288
+Completed line     289
+Completed line     290
+Completed line     291
+Completed line     292
+Completed line     293
+Completed line     294
+Completed line     295
+Completed line     296
+Completed line     297
+Completed line     298
+Completed line     299
+Completed line     300
+Completed line     301
+Completed line     302
+Completed line     303
+Completed line     304
+Completed line     305
+Completed line     306
+Completed line     307
+Completed line     308
+Completed line     309
+Completed line     310
+Completed line     311
+Completed line     312
+Completed line     313
+Completed line     314
+Completed line     315
+Completed line     316
+Completed line     317
+Completed line     318
+Completed line     319
+Completed line     320
+Completed line     321
+Completed line     322
+Completed line     323
+Completed line     324
+Completed line     325
+Completed line     326
+Completed line     327
+Completed line     328
+Completed line     329
+Completed line     330
+Completed line     331
+Completed line     332
+Completed line     333
+Completed line     334
+Completed line     335
+Completed line     336
+Completed line     337
+Completed line     338
+Completed line     339
+Completed line     340
+Completed line     341
+Completed line     342
+Completed line     343
+Completed line     344
+Completed line     345
+Completed line     346
+Completed line     347
+Completed line     348
+Completed line     349
+Completed line     350
+Completed line     351
+Completed line     352
+Completed line     353
+Completed line     354
+Completed line     355
+Completed line     356
+Completed line     357
+Completed line     358
+Completed line     359
+Completed line     360
+Completed line     361
+Completed line     362
+Completed line     363
+Completed line     364
+Completed line     365
+Completed line     366
+Completed line     367
+Completed line     368
+Completed line     369
+Completed line     370
+Completed line     371
+Completed line     372
+Completed line     373
+Completed line     374
+Completed line     375
+Completed line     376
+Completed line     377
+Completed line     378
+Completed line     379
+Completed line     380
+Completed line     381
+Completed line     382
+Completed line     383
+Completed line     384
+Completed line     385
+Completed line     386
+Completed line     387
+Completed line     388
+Completed line     389
+Completed line     390
+Completed line     391
+Completed line     392
+Completed line     393
+Completed line     394
+Completed line     395
+Completed line     396
+Completed line     397
+Completed line     398
+Completed line     399
+Completed line     400
+Completed line     401
+Completed line     402
+Completed line     403
+Completed line     404
+Completed line     405
+Completed line     406
+Completed line     407
+Completed line     408
+Completed line     409
+Completed line     410
+Completed line     411
+Completed line     412
+Completed line     413
+Completed line     414
+Completed line     415
+Completed line     416
+Completed line     417
+Completed line     418
+Completed line     419
+Completed line     420
+Completed line     421
+Completed line     422
+Completed line     423
+Completed line     424
+Completed line     425
+Completed line     426
+Completed line     427
+Completed line     428
+Completed line     429
+Completed line     430
+Completed line     431
+Completed line     432
+Completed line     433
+Completed line     434
+Completed line     435
+Completed line     436
+Completed line     437
+Completed line     438
+Completed line     439
+Completed line     440
+Completed line     441
+Completed line     442
+Completed line     443
+Completed line     444
+Completed line     445
+Completed line     446
+Completed line     447
+Completed line     448
+Completed line     449
+Completed line     450
+Completed line     451
+Completed line     452
+Completed line     453
+Completed line     454
+Completed line     455
+Completed line     456
+Completed line     457
+Completed line     458
+Completed line     459
+Completed line     460
+Completed line     461
+Completed line     462
+Completed line     463
+Completed line     464
+Completed line     465
+Completed line     466
+Completed line     467
+Completed line     468
+Completed line     469
+Completed line     470
+Completed line     471
+Completed line     472
+Completed line     473
+Completed line     474
+Completed line     475
+Completed line     476
+Completed line     477
+Completed line     478
+Completed line     479
+Completed line     480
+Completed line     481
+Completed line     482
+Completed line     483
+Completed line     484
+Completed line     485
+Completed line     486
+Completed line     487
+Completed line     488
+Completed line     489
+Completed line     490
+Completed line     491
+Completed line     492
+Completed line     493
+Completed line     494
+Completed line     495
+Completed line     496
+Completed line     497
+Completed line     498
+Completed line     499
+Completed line     500
+Completed line     501
+Completed line     502
+Completed line     503
+Completed line     504
+Completed line     505
+Completed line     506
+Completed line     507
+Completed line     508
+Completed line     509
+Completed line     510
+Completed line     511
+Completed line     512
+Completed line     513
+Completed line     514
+Completed line     515
+Completed line     516
+Completed line     517
+Completed line     518
+Completed line     519
+Completed line     520
+Completed line     521
+Completed line     522
+Completed line     523
+Completed line     524
+Completed line     525
+Completed line     526
+Completed line     527
+Completed line     528
+Completed line     529
+Completed line     530
+Completed line     531
+Completed line     532
+Completed line     533
+Completed line     534
+Completed line     535
+Completed line     536
+Completed line     537
+Completed line     538
+Completed line     539
+Completed line     540
+Completed line     541
+Completed line     542
+Completed line     543
+Completed line     544
+Completed line     545
+Completed line     546
+Completed line     547
+Completed line     548
+Completed line     549
+Completed line     550
+Completed line     551
+Completed line     552
+Completed line     553
+Completed line     554
+Completed line     555
+Completed line     556
+Completed line     557
+Completed line     558
+Completed line     559
+Completed line     560
+Completed line     561
+Completed line     562
+Completed line     563
+Completed line     564
+Completed line     565
+Completed line     566
+Completed line     567
+Completed line     568
+Completed line     569
+Completed line     570
+Completed line     571
+Completed line     572
+Completed line     573
+Completed line     574
+Completed line     575
+Completed line     576
+Completed line     577
+Completed line     578
+Completed line     579
+Completed line     580
+Completed line     581
+Completed line     582
+Completed line     583
+Completed line     584
+Completed line     585
+Completed line     586
+Completed line     587
+Completed line     588
+Completed line     589
+Completed line     590
+Completed line     591
+Completed line     592
+Completed line     593
+Completed line     594
+Completed line     595
+Completed line     596
+Completed line     597
+Completed line     598
+Completed line     599
+Completed line     600
+Completed line     601
+Completed line     602
+Completed line     603
+Completed line     604
+Completed line     605
+Completed line     606
+Completed line     607
+Completed line     608
+Completed line     609
+Completed line     610
+Completed line     611
+Completed line     612
+Completed line     613
+Completed line     614
+Completed line     615
+Completed line     616
+Completed line     617
+Completed line     618
+Completed line     619
+Completed line     620
+Completed line     621
+Completed line     622
+Completed line     623
+Completed line     624
+Completed line     625
+Completed line     626
+Completed line     627
+Completed line     628
+Completed line     629
+Completed line     630
+Completed line     631
+Completed line     632
+Completed line     633
+Completed line     634
+Completed line     635
+Completed line     636
+Completed line     637
+Completed line     638
+Completed line     639
+Completed line     640
+Completed line     641
+Completed line     642
+Completed line     643
+Completed line     644
+Completed line     645
+Completed line     646
+Completed line     647
+Completed line     648
+Completed line     649
+Completed line     650
+Completed line     651
+Completed line     652
+Completed line     653
+Completed line     654
+Completed line     655
+Completed line     656
+Completed line     657
+Completed line     658
+Completed line     659
+Completed line     660
+Completed line     661
+Completed line     662
+Completed line     663
+Completed line     664
+Completed line     665
+Completed line     666
+Completed line     667
+Completed line     668
+Completed line     669
+Completed line     670
+Completed line     671
+Completed line     672
+Completed line     673
+Completed line     674
+Completed line     675
+Completed line     676
+Completed line     677
+Completed line     678
+Completed line     679
+Completed line     680
+Completed line     681
+Completed line     682
+Completed line     683
+Completed line     684
+Completed line     685
+Completed line     686
+Completed line     687
+Completed line     688
+Completed line     689
+Completed line     690
+Completed line     691
+Completed line     692
+Completed line     693
+Completed line     694
+Completed line     695
+Completed line     696
+Completed line     697
+Completed line     698
+Completed line     699
+Completed line     700
+Completed line     701
+Completed line     702
+Completed line     703
+Completed line     704
+Completed line     705
+Completed line     706
+Completed line     707
+Completed line     708
+Completed line     709
+Completed line     710
+Completed line     711
+Completed line     712
+Completed line     713
+Completed line     714
+Completed line     715
+Completed line     716
+Completed line     717
+Completed line     718
+Completed line     719
+Completed line     720
+Completed line     721
+Completed line     722
+Completed line     723
+Completed line     724
+Completed line     725
+Completed line     726
+Completed line     727
+Completed line     728
+Completed line     729
+Completed line     730
+Completed line     731
+Completed line     732
+Completed line     733
+Completed line     734
+Completed line     735
+Completed line     736
+Completed line     737
+Completed line     738
+Completed line     739
+Completed line     740
+Completed line     741
+Completed line     742
+Completed line     743
+Completed line     744
+Completed line     745
+Completed line     746
+Completed line     747
+Completed line     748
+Completed line     749
+Completed line     750
+Completed line     751
+Completed line     752
+Completed line     753
+Completed line     754
+Completed line     755
+Completed line     756
+Completed line     757
+Completed line     758
+Completed line     759
+Completed line     760
+Completed line     761
+Completed line     762
+Completed line     763
+Completed line     764
+Completed line     765
+Completed line     766
+Completed line     767
+Completed line     768
+Completed line     769
+Completed line     770
+Completed line     771
+Completed line     772
+Completed line     773
+Completed line     774
+Completed line     775
+Completed line     776
+Completed line     777
+Completed line     778
+Completed line     779
+Completed line     780
+Completed line     781
+Completed line     782
+Completed line     783
+Completed line     784
+Completed line     785
+Completed line     786
+Completed line     787
+Completed line     788
+Completed line     789
+Completed line     790
+Completed line     791
+Completed line     792
+Completed line     793
+Completed line     794
+Completed line     795
+Completed line     796
+Completed line     797
+Completed line     798
+Completed line     799
+Completed line     800
+Completed line     801
+Completed line     802
+Completed line     803
+Completed line     804
+Completed line     805
+Completed line     806
+Completed line     807
+Completed line     808
+Completed line     809
+Completed line     810
+Completed line     811
+Completed line     812
+Completed line     813
+Completed line     814
+Completed line     815
+Completed line     816
+Completed line     817
+Completed line     818
+Completed line     819
+Completed line     820
+Completed line     821
+Completed line     822
+Completed line     823
+Completed line     824
+Completed line     825
+Completed line     826
+Completed line     827
+Completed line     828
+Completed line     829
+Completed line     830
+Completed line     831
+Completed line     832
+Completed line     833
+Completed line     834
+Completed line     835
+Completed line     836
+Completed line     837
+Completed line     838
+Completed line     839
+Completed line     840
+Completed line     841
+Completed line     842
+Completed line     843
+Completed line     844
+Completed line     845
+Completed line     846
+Completed line     847
+Completed line     848
+Completed line     849
+Completed line     850
+Completed line     851
+Completed line     852
+Completed line     853
+Completed line     854
+Completed line     855
+Completed line     856
+Completed line     857
+Completed line     858
+Completed line     859
+Completed line     860
+Completed line     861
+Completed line     862
+Completed line     863
+Completed line     864
+Completed line     865
+Completed line     866
+Completed line     867
+Completed line     868
+Completed line     869
+Completed line     870
+Completed line     871
+Completed line     872
+Completed line     873
+Completed line     874
+Completed line     875
+Completed line     876
+Completed line     877
+Completed line     878
+Completed line     879
+Completed line     880
+Completed line     881
+Completed line     882
+Completed line     883
+Completed line     884
+Completed line     885
+Completed line     886
+Completed line     887
+Completed line     888
+Completed line     889
+Completed line     890
+Completed line     891
+Completed line     892
+Completed line     893
+Completed line     894
+Completed line     895
+Completed line     896
+Completed line     897
+Completed line     898
+Completed line     899
+Completed line     900
+Completed line     901
+Completed line     902
+Completed line     903
+Completed line     904
+Completed line     905
+Completed line     906
+Completed line     907
+Completed line     908
+Completed line     909
+Completed line     910
+Completed line     911
+Completed line     912
+Completed line     913
+Completed line     914
+Completed line     915
+Completed line     916
+Completed line     917
+Completed line     918
+Completed line     919
+Completed line     920
+Completed line     921
+Completed line     922
+Completed line     923
+Completed line     924
+Completed line     925
+Completed line     926
+Completed line     927
+Completed line     928
+Completed line     929
+Completed line     930
+Completed line     931
+Completed line     932
+Completed line     933
+Completed line     934
+Completed line     935
+Completed line     936
+Completed line     937
+Completed line     938
+Completed line     939
+Completed line     940
+Completed line     941
+Completed line     942
+Completed line     943
+Completed line     944
+Completed line     945
+Completed line     946
+Completed line     947
+Completed line     948
+Completed line     949
+Completed line     950
+Completed line     951
+Completed line     952
+Completed line     953
+Completed line     954
+Completed line     955
+Completed line     956
+Completed line     957
+Completed line     958
+Completed line     959
+Completed line     960
+Completed line     961
+Completed line     962
+Completed line     963
+Completed line     964
+Completed line     965
+Completed line     966
+Completed line     967
+Completed line     968
+Completed line     969
+Completed line     970
+Completed line     971
+Completed line     972
+Completed line     973
+Completed line     974
+Completed line     975
+Completed line     976
+Completed line     977
+Completed line     978
+Completed line     979
+Completed line     980
+Completed line     981
+Completed line     982
+Completed line     983
+Completed line     984
+Completed line     985
+Completed line     986
+Completed line     987
+Completed line     988
+Completed line     989
+Completed line     990
+Completed line     991
+Completed line     992
+Completed line     993
+Completed line     994
+Completed line     995
+Completed line     996
+Completed line     997
+Completed line     998
+Completed line     999
+Completed line    1000
+Completed line    1001
+Completed line    1002
+Completed line    1003
+Completed line    1004
+Completed line    1005
+Completed line    1006
+Completed line    1007
+Completed line    1008
+Completed line    1009
+Completed line    1010
+Completed line    1011
+Completed line    1012
+Completed line    1013
+Completed line    1014
+Completed line    1015
+Completed line    1016
+Completed line    1017
+Completed line    1018
+Completed line    1019
+Completed line    1020
+Completed line    1021
+Completed line    1022
+Completed line    1023
+Completed line    1024
+Completed line    1025
+Completed line    1026
+Completed line    1027
+Completed line    1028
+Completed line    1029
+Completed line    1030
+Completed line    1031
+Completed line    1032
+Completed line    1033
+Completed line    1034
+Completed line    1035
+Completed line    1036
+Completed line    1037
+Completed line    1038
+Completed line    1039
+Completed line    1040
+Completed line    1041
+Completed line    1042
+Completed line    1043
+Completed line    1044
+Completed line    1045
+Completed line    1046
+Completed line    1047
+Completed line    1048
+Completed line    1049
+Completed line    1050
+Completed line    1051
+Completed line    1052
+Completed line    1053
+Completed line    1054
+Completed line    1055
+Completed line    1056
+Completed line    1057
+Completed line    1058
+Completed line    1059
+Completed line    1060
+Not displaying RGB reflectance image.
+ 
+************  DATA ANALYSIS MENU   *************
+ 
+Setup Commands:
+     S = I/O Setup, interactive
+     s = I/O Setup via serial queries
+     d = new radiance Data cube
+     l = Load and display radiance data cube
+     a = Adjacency algorithm setup (create averaged image)
+     q = Quit to main menu
+ 
+Processing Commands:
+     i = simulate radiance Image from reflectance
+     v = aerosol Visibility determination
+     k = Kaufman (ratio) visibility retrieval
+     c = Column water retrieval
+   MSc = User-specified Column water
+     r = Reflectance determination
+     M = prepare MODTRAN run
+     R = run MODTRAN
+     WC = Channel Wavelength Correction
+ 
+Utility Commands:
+     ? = menu help
+     p = Plot pixel spectra
+     e = display Existing reflectance file
+ 
+script command q
+Overwrite old file name list (filename.txt) with current file names?  n=no   y=yes
+script command n
+filter function band centers:      0.442491     0.482764     0.560859
+     0.654205     0.863971      1.60908      2.20153
+input image band centers:      0.433000     0.483000     0.565000     0.662000
+     0.868000      1.61000      2.20000
+filter function bands used:        0       1       2       3       4       5
+       6
